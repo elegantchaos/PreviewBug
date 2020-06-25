@@ -1,0 +1,13 @@
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 25/06/2020.
+//  All code (c) 2020 - present day, Elegant Chaos.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#include ".rt/RTCatalyst.xcconfig"
+#include "PreviewBug.xcconfig"
+
+OTHER_LDFLAGS = $ACTION_STATUS_ADDITIONAL_FRAMEWORKS
+
+// Uncomment the lines below to test Sparkle
+//RT_BUILD = 100
+//#include "Sources/PreviewBug/Resources/IncludeSparkle.xcconfig"

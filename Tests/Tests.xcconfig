@@ -1,0 +1,11 @@
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 25/06/2020.
+//  All code (c) 2020 - present day, Elegant Chaos.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#include ".rt/RTTests.xcconfig"
+#include "Sources/PreviewBug/Resources/PreviewBug.xcconfig"
+
+TEST_TARGET_NAME = PreviewBugMobile
+PRODUCT_NAME = $(TARGET_NAME)
+INFOPLIST_FILE = Tests/PreviewBugUITests/Info.plist

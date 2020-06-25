@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#  Created by Sam Deane on 25/06/2020.
+#  All code (c) 2020 - present day, Elegant Chaos.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+xcodebuild -workspace PreviewBug.xcworkspace/ -scheme Tools | xcpretty
+
+echo " "
+echo "*************"
+echo "Uploading iOS  "
+echo "*************"
+
+set -euox pipefail  # (add an x to flags to enable debugging)
+
+echo "Using release tools $(rt --version)."
+rt set scheme PreviewBug --platform=iOS
+rt archive --platform=iOS --show-output 2> /dev/null | xcpretty
+rt export --platform=iOS
+rt upload --platform=iOS

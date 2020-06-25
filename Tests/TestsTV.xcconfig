@@ -1,0 +1,9 @@
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 25/06/2020.
+//  All code (c) 2020 - present day, Elegant Chaos.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#include "Tests.xcconfig"
+
+TEST_TARGET_NAME = PreviewBugTV
+SDKROOT = appletvos
